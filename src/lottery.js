@@ -1,15 +1,15 @@
-import web3 from './web3';
+import web3 from './web3'
 
-const address= '0x437EAB56260fE9761f809101823533134b4dcAd8';
+const address = '0x437EAB56260fE9761f809101823533134b4dcAd8'
 
-const abi= [
+const abi = [
   {
     inputs: [],
     stateMutability: 'nonpayable',
     type: 'constructor',
     constant: undefined,
     payable: undefined,
-    signature: 'constructor'
+    signature: 'constructor',
   },
   {
     inputs: [],
@@ -19,7 +19,7 @@ const abi= [
     type: 'function',
     constant: undefined,
     payable: true,
-    signature: '0xe97dcb62'
+    signature: '0xe97dcb62',
   },
   {
     inputs: [],
@@ -28,24 +28,24 @@ const abi= [
       {
         internalType: 'address payable[]',
         name: '',
-        type: 'address[]'
-      }
+        type: 'address[]',
+      },
     ],
     stateMutability: 'view',
     type: 'function',
     constant: true,
     payable: undefined,
-    signature: '0x8b5b9ccc'
+    signature: '0x8b5b9ccc',
   },
   {
     inputs: [],
     name: 'manager',
-    outputs: [ { internalType: 'address', name: '', type: 'address' } ],
+    outputs: [{ internalType: 'address', name: '', type: 'address' }],
     stateMutability: 'view',
     type: 'function',
     constant: true,
     payable: undefined,
-    signature: '0x481c6a75'
+    signature: '0x481c6a75',
   },
   {
     inputs: [],
@@ -55,18 +55,18 @@ const abi= [
     type: 'function',
     constant: undefined,
     payable: undefined,
-    signature: '0x5d495aea'
+    signature: '0x5d495aea',
   },
   {
-    inputs: [ { internalType: 'uint256', name: '', type: 'uint256' } ],
+    inputs: [{ internalType: 'uint256', name: '', type: 'uint256' }],
     name: 'players',
-    outputs: [ { internalType: 'address payable', name: '', type: 'address' } ],
+    outputs: [{ internalType: 'address payable', name: '', type: 'address' }],
     stateMutability: 'view',
     type: 'function',
     constant: true,
     payable: undefined,
-    signature: '0xf71d96cb'
-  }
-];
+    signature: '0xf71d96cb',
+  },
+]
 
-export default new web3.eth.Contract(abi, address);
+export default new web3.eth.Contract(abi, address)
